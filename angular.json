@@ -6,7 +6,7 @@
     "analytics": false
   },
   "projects": {
-    "To-Do-App": {
+    "todoApp": {
       "root": "",
       "projectType": "application",
       "sourceRoot": "src",
@@ -15,7 +15,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/To-Do-App",
+            "outputPath": "dist/todoApp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -55,10 +55,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "To-Do-App:build:production"
+              "browserTarget": "todoApp:build:production"
             },
             "development": {
-              "browserTarget": "To-Do-App:build:development"
+              "browserTarget": "todoApp:build:development"
             }
           },
           "defaultConfiguration": "development"

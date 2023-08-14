@@ -3,11 +3,11 @@
     "beforeDevCommand": "npm run start -- --port 1420",
     "beforeBuildCommand": "npm run build",
     "devPath": "http://localhost:1420",
-    "distDir": "../dist/To-Do-App",
+    "distDir": "../dist/todoApp",
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "To-Do-App",
+    "productName": "todoApp",
     "version": "0.0.0"
   },
   "tauri": {
@@ -16,12 +16,15 @@
       "shell": {
         "all": false,
         "open": true
+      },
+      "path": {
+        "all": true
       }
     },
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "com.tauri.todoApp",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -37,7 +40,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "To-Do-App",
+        "title": "todoApp",
         "width": 800,
         "height": 600
       }
